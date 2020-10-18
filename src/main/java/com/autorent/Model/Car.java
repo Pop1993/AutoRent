@@ -1,5 +1,7 @@
 package com.autorent.Model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -33,9 +35,11 @@ public class Car {
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "branch_id", nullable = false)
+    @JsonBackReference
     private Branch branch;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "car")
+    @JsonManagedReference
     private List<CarRental> rentals;
 
 

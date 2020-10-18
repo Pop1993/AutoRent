@@ -1,5 +1,6 @@
 package com.autorent.Model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -24,6 +25,7 @@ public class RentalOffice {
     private String email;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "office")
+    @JsonManagedReference
     private Set<Branch> branches;
 
 //    public Integer getId() {

@@ -1,5 +1,6 @@
 package com.autorent.Model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 import javax.persistence.*;
 import java.util.List;
@@ -23,6 +24,7 @@ public class Customer {
     private String address;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "customer")
+    @JsonManagedReference
     private List<CarRental> rentals;
 
 }

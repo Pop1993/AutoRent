@@ -1,5 +1,7 @@
 package com.autorent.Model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -23,8 +25,10 @@ public class Return {
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "rental_id", referencedColumnName = "id", nullable = false)
+    @JsonBackReference
     private CarRental carRental;
 
     @OneToOne(cascade = CascadeType.ALL,mappedBy = "aReturn")
+    @JsonManagedReference
     private Revenue revenue;
 }
