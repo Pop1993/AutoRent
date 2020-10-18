@@ -1,0 +1,27 @@
+
+.container
+{
+  width: 400px;
+  height: 400px;
+  margin:  auto;
+  color: white;
+  text-align: left;
+}
+.header {
+  padding: 60px;
+  text-align: left;
+  background: #1abc9c;
+  color: white;
+  font-size: 5px;
+}
+.u-container-style{
+  color: white;
+}
+.u-container-layout{
+ text-align: right;
+  padding-right: 50px;
+  padding-bottom: 30px;
+}
+
+
+

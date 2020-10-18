@@ -1,0 +1,15 @@
+
+.container-body {
+  height: 100%;
+  background-image: url("/assets/image.jpg");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+body {
+  margin: 0;
+}
+.html-container{
+height: 100%;
+}

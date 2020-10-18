@@ -1,0 +1,60 @@
+<div class="header">
+  <h1>Header</h1>
+  <p>My supercool header</p>
+</div>
+
+
+<div class="container">
+  <h1>Text Center</h1>
+</div>
+
+<div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
+  <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl">
+    <div
+      class="u-black u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-shape u-shape-rectangle u-shape-1"></div>
+    <div class="u-form u-form-1">
+      <form action="#" method="POST" class="u-block-839b-14 u-clearfix u-form-spacing-15 u-form-vertical u-inner-form"
+            source="custom">
+        <div class="u-form-group u-form-name u-form-group-1">
+          <label for="Pick up location" class="u-form-control-hidden u-label">Pick up location</label>
+          <input type="text" id="Pick up location" pattern="[a-zA-Z]{1,}" name="Pick up location"
+                 class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-white u-input-1"
+                 required=""
+                 [(ngModel)]="PickUpClick">
+        </div>
+        <div class="u-form-group u-form-phone u-form-group-2">
+          <label class="u-form-control-hidden u-label">Return Location</label>
+          <input type="text" id="Return Location" name="Return Location" pattern="[a-zA-Z]{1,}"
+                 class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-white u-input-2"
+                 required="" [(ngModel)]="ReturnClick">
+
+        </div>
+        <div class="u-form-group u-form-message u-form-group-3">
+          <label class="u-form-control-hidden u-label">Pick-up date</label>
+          <input type="date" id="Pick-up date" name="Pick-up date"
+                 class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-white u-input-2"
+                 required="name">
+          <label class="u-form-control-hidden u-label">Return date</label>
+          <input type="date" id="Return date" name="Return date"
+                 class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-white u-input-2"
+                 required="">
+        </div>
+        <div class="u-form-group u-form-submit u-form-group-4">
+          <input type="submit" value="Submit" class="u-form-control-hidden" style="font-size: 1.125rem;"
+                 (click)="onClick()"
+                 (click)="ThisClick()">
+
+        </div>
+        <div class="u-form-send-message u-form-send-success" color="red"> Thank you! Your car has been rented.</div>
+        <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please complete the empty fields.
+        </div>
+        <input type="hidden" value="" name="recaptchaResponse">
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
