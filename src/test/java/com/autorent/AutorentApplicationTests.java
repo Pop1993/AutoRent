@@ -1,4 +1,4 @@
-package com.autorent.autorent;
+package com.autorent;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
